@@ -1,12 +1,277 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+	
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
 
-<body>
-Content of the document......
-</body>
+	
 
-</html> 
+		
+	</head>
+	<body>
+	
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+	
+	<div class="container-fluid" id="main">
+
+		<div class="navbar" style="width: 100%"> 
+			<div class="container">
+				<button class="navbar-toggle" style="margin: 15px 5px 0 0" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+
+				</button>
+				<a href="/" class="navbar-brand"><img src="images/logo.png" alt="YourLogo" class="img-responsive" style="height: 100%; position: relative;"></a>
+				
+				<div class="nav-collapse collapse navbar-responsive-collapse" style="margin-top: 15px" >
+					<ul class="nav navbar-nav pull-right">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li >
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services
+								<strong class="caret"></strong>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Orthodontics</a>
+								</li>
+								<li>
+									<a href="#">Implants</a>
+								</li>
+								<li>
+									<a href="#">Root Canal Treatment</a>
+								</li>
+
+								<li class="divider"></li>
+								<li class="dropdown-header">More Services</li>
+								<li>
+										<a href="#">Teeth Whitening</a>
+									</li>
+									<li>
+										<a href="#">Extraction</a>
+									</li>
+									<li>
+											<a href="#">Dentures</a>
+										</li>
+							</ul>	
+						</li>
+						<li >
+								<a href="#">Contact Us</a>
+							</li>
+						<li >
+							<button type="button" style="background-color: #1795ac" class="btn btn-primary " id="book-btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-calendar"></span> Book an appointment!</button>
+							<!-- <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for Modal Window</a> -->
+							<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										  <h4 class="modal-title" id="myModalLabel">Fill the details for your appointment</h4>
+										</div>
+										<div class="modal-body">
+												<form class="form-horizontal">
+														<div class="form-group">
+															<label class="col-lg-2 control-label" for="inputName">Name</label>
+															<div class="col-lg-10">
+																<input class="form-control" required id="inputName" placeholder="Name" type="text">
+															</div>
+														</div>
+	
+														<div class="form-group">
+																<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+																<div class="col-lg-10">
+																	<input class="form-control" required id="inputEmail" placeholder="Email" type="email">
+																</div>
+															</div>
+
+															<div class="form-group">
+																	<label class="col-lg-2 control-label" for="inputDate">Date</label>
+																	<div class="col-lg-10">
+																		<input class="form-control tyui" required id="inputDate" placeholder="Date" type="date">
+																	</div>
+																</div>														
+	
+													</form>
+										</div>
+										<div class="modal-footer">
+										  <!-- <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button> -->
+										  <button type="button" class="btn btn-primary">Submit</button>
+										</div>
+								  </div>
+								</div>
+							</div>	
+
+						</li>
+					</ul>
+
+					
+				</div>
+			
+			</div>
+		</div>
+		</div>
+		<!-- end navbar -->
+		<div class="row">
+				<div class="col-2">
+
+				</div>
+				<div class="col-8 carousel slide " id="myCarousel" data-ride="carousel" style="height: 70vh; padding: 0%">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						  <li data-target="#myCarousel" data-slide-to="1"></li>
+						  <li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+					
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner"  >
+					
+						  <div class="item active">
+							<img src="images/implant.jpg" alt="Implants" style=" width: 100%; height: 70vh" class="img-responsive" >
+							<div class="carousel-caption">
+							  <h3>Implants</h3>
+							  <p>Fix new teeth and never stop smiling!</p>
+							</div>
+						  </div>
+					
+						  <div class="item">
+							<img src="images/invisline.jpg" alt="Invisline" style="width:100%; height: 70vh;" class="img-responsive">
+							<div class="carousel-caption">
+							  <h3>Invisline</h3>
+							  <p>Get your invisible braces now and smile with confidence!</p>
+							</div>
+						  </div>
+						
+						  <div class="item">
+							<img src="images/denture.jpg" alt="Dentures" style="width:100%; height: 70vh;" class="img-responsive" > 
+							<div class="carousel-caption">
+							  <h3>Dentures</h3>
+							  <p>Get your dentures and grow younger!</p>
+							</div>
+						  </div>
+					  
+						</div>
+					
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left"></span>
+						  <span class="sr-only"></span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right"></span>
+						  <span class="sr-only"></span>
+						</a>
+					  
+		
+		</div><!-- end myCarousel -->
+	<div class="col-2">
+					
+				</div>
+		</div>
+
+		
+		
+		<div class="row" id="bigCallout">
+	
+		</div><!-- end row -->
+		
+		
+		<div class="row" id="featuresHeading">
+	
+		</div><!-- end row -->
+		
+		
+		<div class="row" id="features">
+	
+		</div><!-- end row -->
+		
+		
+		<div class="row" id="moreInfo">
+	
+		</div><!-- end row -->
+		
+		
+		<div class="row" id="moreCourses">
+			
+		</div><!-- end row -->
+		
+	</div><!-- end container -->
+	<hr>
+	
+	<footer>
+			<div  class="container">
+					<div  class="row">
+						<div class="col-sm-2">
+							<h6>Copyright &copy; 2019 Shanthi Dental Clinic</h6>
+						</div>
+						<div class="col-sm-4">
+							<h6>About Us</h6>
+							<p>Lorem ipsum dolor sit amet co	nsectetur adipisicing elit. Quaerat quam maxime sint iusto, molestias animi illum harum aut numquam accusantium deleniti iste eum ut officia assumenda rerum esse adipisci! Nulla.</p>
+		
+						</div>
+						<div class="col-sm-2">
+							<h6>Navigation</h6>
+							<ul class="unstyled">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>	
+						</div>
+		
+						<div class="col-sm-2">
+								<h6>Follow us on</h6>
+								<ul class="unstyled">
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Google Plus</a></li>
+								</ul>	
+							</div>
+		
+						<div class="col-sm-2">
+							<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by San</h6>
+		
+						</div>
+					</div>
+				</div>
+	</footer>
+	
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+	
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
