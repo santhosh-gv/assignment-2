@@ -1,0 +1,78 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   body{
+       overflow-x: hidden;
+   }
+   footer{
+    background:#333;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+   ul.unstyled{
+    list-style: none;
+    padding: 0;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#book-btn{
+    margin-top: 5px;
+    margin-left: 10px; 
+}   
+   .navbar-brand{
+    padding: 13px 15px;
+}
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+/* .carousel{
+    height: 50vh;
+} */
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
