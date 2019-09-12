@@ -15,6 +15,12 @@ Notes:	 Hand coded for Udemy.com
    body{
        overflow-x: hidden;
    }
+   #features{
+    text-align: center;
+}
+#features img{
+    margin: 0 0 20px;
+}
    footer{
     background:#333;
     color: #eee;
@@ -22,12 +28,19 @@ Notes:	 Hand coded for Udemy.com
     padding: 20px;
 
 }
+#featuresHeading {
+    text-align: center;
+
+}
+#cons{
+    font-size: 24px;
+}
 
 
 /* --------------------------------------
    Typography
    -------------------------------------- */
-
+    
    ul.unstyled{
     list-style: none;
     padding: 0;
@@ -47,9 +60,7 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-/* .carousel{
-    height: 50vh;
-} */
+
 
 
 /* --------------------------------------
@@ -69,7 +80,9 @@ Notes:	 Hand coded for Udemy.com
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	
+	#cons{
+        font-size: 16px;
+    }
 }
 
 /* Large desktop */
